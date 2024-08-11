@@ -17,12 +17,7 @@ export default function BookingPage() {
                 if (foundBooking) {
                     setBooking(foundBooking);
                 }
-            },
-            {
-                withCredentials: true,
-                credentials: 'true',
-                'Content-Type': 'application/json'
-              }
+            }
         )
         }
     },[id]);
