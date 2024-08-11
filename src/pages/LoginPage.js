@@ -21,7 +21,7 @@ export default function LoginPage() {
                 },
                 {
                     withCredentials: true,
-                    credentials: 'include',
+                    credentials: 'true',
                   }
             );
             setUser(data)
