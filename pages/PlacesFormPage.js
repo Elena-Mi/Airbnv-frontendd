@@ -40,7 +40,14 @@ export default function PlacesFormPage() {
            setMaxGuests(data.maxGuests);
            setPrice(data.price);
            
-        });
+        },
+        {
+            withCredentials: true,
+            credentials: 'true',
+            'Content-Type': 'application/json'
+          }
+    );
+      
       }, [id]);
 
     function inputHeader(text) {

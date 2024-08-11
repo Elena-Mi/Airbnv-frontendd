@@ -15,7 +15,13 @@ export default function PlacesPage({className}) {
     useEffect(() => {
       axios.get('https://airbnv-backend.onrender.com/api/user-places').then(({data}) => {
         setPlaces(data);
-      });
+      },
+      {
+        withCredentials: true,
+        credentials: 'true',
+        'Content-Type': 'application/json'
+      }
+    );
     }, []);
     
 
