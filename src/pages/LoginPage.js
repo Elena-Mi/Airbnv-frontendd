@@ -22,6 +22,7 @@ export default function LoginPage() {
                 {
                     withCredentials: true,
                     credentials: 'true',
+                    'Content-Type': 'application/json'
                   }
             );
             setUser(data)

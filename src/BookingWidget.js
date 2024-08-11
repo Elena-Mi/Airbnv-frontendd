@@ -33,7 +33,13 @@ export default function BookingWidget({place}) {
             checkIn, checkOut, numberOfGuests, name, phone,
             place:place._id,
             price: numberOfNights * place.price,
-       });
+       },
+       {
+        withCredentials: true,
+        credentials: 'true',
+        'Content-Type': 'application/json'
+      }
+    );
        const bookingId = response.data._id;
        setRedirect(`/account/bookings/${bookingId}`)
 
