@@ -24,8 +24,7 @@ export default function LoginPage() {
                 
               },
             headers: {
-                'Content-Type': 'application/json',
-                "Access-Controll-Allow-Origin":"*"
+                "Content-Type": "application/json"
             }
             );
             setUser(data)
