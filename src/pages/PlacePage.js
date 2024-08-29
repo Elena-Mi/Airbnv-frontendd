@@ -17,11 +17,14 @@ export default function PlacePage() {
         axios.get(`https://airbnv-backend.onrender.com/api/places/${id}`).then(response => {
             setPlace(response.data)
         },
-        {
-            withCredentials: true,
-            credentials: 'true',
-            'Content-Type': 'application/json'
-          }
+         {
+                withCredentials: true,
+                
+              },
+            headers: {
+                'Content-Type': 'application/json',
+                "Access-Controll-Allow-Origin":"*"
+            }
     )
     }, [id])
 
