@@ -12,15 +12,8 @@ export default function BookingsPage() {
     useEffect( () => {
         axios.get('https://airbnv-backend.onrender.com/api/bookings').then(response => {
             setBookings(response.data)
-        },
-              {
-                withCredentials: true,
-                
-              },
-            headers: {
-                'Content-Type': 'application/json',
-                "Access-Controll-Allow-Origin":"*"
-            })
+        }
+            )
     }, [])
 
 
