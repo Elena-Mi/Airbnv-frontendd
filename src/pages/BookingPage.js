@@ -20,9 +20,12 @@ export default function BookingPage() {
             },
             {
                 withCredentials: true,
-                credentials: 'true',
-                'Content-Type': 'application/json'
-              }
+                
+              },
+            headers: {
+                'Content-Type': 'application/json',
+                "Access-Controll-Allow-Origin":"*"
+            }
         )
         }
     },[id]);
