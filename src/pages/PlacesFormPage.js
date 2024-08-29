@@ -42,10 +42,13 @@ export default function PlacesFormPage() {
            
         },
         {
-            withCredentials: true,
-            credentials: 'true',
-            'Content-Type': 'application/json'
-          }
+                withCredentials: true,
+                
+              },
+            headers: {
+                'Content-Type': 'application/json',
+                "Access-Controll-Allow-Origin":"*"
+            }
     );
       
       }, [id]);
