@@ -14,10 +14,14 @@ export default function RegisterPage() {
             email,
             password,
           },
-          {
-            withCredentials: true,
-            credentials: 'include',
-          });
+           {
+                withCredentials: true,
+                
+              },
+            headers: {
+                'Content-Type': 'application/json',
+                "Access-Controll-Allow-Origin":"*"
+            });
           alert('Registration successful. Now you can log in');
         } catch (e) {
           alert('Registration failed. Please try again later');
