@@ -23,8 +23,8 @@ export default function BookingPage() {
                 
               },
             headers: {
-                'Content-Type': 'application/json',
-                "Access-Controll-Allow-Origin":"*"
+                "Content-Type": "application/json"
+             
             }
         )
         }
