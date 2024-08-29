@@ -46,8 +46,7 @@ export default function PlacesFormPage() {
                 
               },
             headers: {
-                'Content-Type': 'application/json',
-                "Access-Controll-Allow-Origin":"*"
+                "Content-Type": "application/json"
             }
     );
       
