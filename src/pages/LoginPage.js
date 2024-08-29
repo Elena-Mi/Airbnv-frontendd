@@ -20,10 +20,13 @@ export default function LoginPage() {
                     password
                 },
                 {
-                    withCredentials: true,
-                    credentials: 'true',
-                    'Content-Type': 'application/json'
-                  }
+                withCredentials: true,
+                
+              },
+            headers: {
+                'Content-Type': 'application/json',
+                "Access-Controll-Allow-Origin":"*"
+            }
             );
             setUser(data)
             alert('Login successful');
