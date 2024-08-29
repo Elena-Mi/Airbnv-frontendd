@@ -19,7 +19,7 @@ export default function RegisterPage() {
                 
               },
             headers: {
-                "Content-Type': 'application/json"
+                "Content-Type": "application/json"
                 
             });
           alert('Registration successful. Now you can log in');
