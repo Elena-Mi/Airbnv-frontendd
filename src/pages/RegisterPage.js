@@ -19,8 +19,8 @@ export default function RegisterPage() {
                 
               },
             headers: {
-                'Content-Type': 'application/json',
-                "Access-Controll-Allow-Origin":"*"
+                "Content-Type': 'application/json"
+                
             });
           alert('Registration successful. Now you can log in');
         } catch (e) {
