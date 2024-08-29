@@ -10,16 +10,7 @@ export default function IndexPage() {
   useEffect( () => {
     axios.get('https://airbnv-backend.onrender.com/api/places').then(response => {
       setPlaces(response.data)
-    },
-           {
-                withCredentials: true,
-                
-              },
-            headers: {
-                'Content-Type': 'application/json',
-                "Access-Controll-Allow-Origin":"*"
-            },                                                           
-        [])
+    },[])
   })
 
     return (
